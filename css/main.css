@@ -407,7 +407,7 @@ main .slider .container {
 	width: 160px;
 	content: '';
 	background: url(../img/icon/offer-right.png) no-repeat;
-	top: 160px;
+	top: 155px;
     right: -100px;
 	
 }
@@ -933,10 +933,6 @@ footer {
 	.section-title:after {
 		left:47.5%;
 	}
-	.about-video {
-		text-align: center;
-		align-items: center;
-	}
 	.section-title h2 {
 		text-align: center;
 	}
@@ -954,7 +950,7 @@ footer {
 		left: 41%;
 	}
 	.video {
-		margin-left:0px;
+		margin-left:0px !important;
 	}
 	.offer {
 		width:50%;
@@ -982,9 +978,8 @@ footer {
 	}
 }
 @media only screen and (max-width: 768px) {
-
 	.slider {
-		height:600px;
+		height:100%;
 	}
 	.text-familiarized {
 		display: flex;
@@ -1051,15 +1046,6 @@ footer {
     	background-position: 7px;
     	outline: none;
 	}
-/*	.form-name-adaptability input:focus {
-		border-color: #f5a40d;
-	}
-	.form-telefin-adaptability input:focus {
-		border-color: #f5a40d;
-	}*/
-	.video {
-		margin-left:35px !important;
-	}
 	.video .background-video {
     	width: 460px;
 	}
@@ -1100,9 +1086,6 @@ footer {
 	}
 	.information-experience {
 		margin-bottom:30px;
-	}
-	.video {
-		margin-left:35px !important;
 	}
 	.video .background-video {
     	width: 330px;
@@ -1145,10 +1128,41 @@ footer {
 	.party span {
 		padding: 30px 6px 30px 6px;
 	}
+	.party .quote {
+		display: none;
+	}
+	.name-director {
+		padding-left: 150px;
+	}
 	.party .oleja {
-		top:-110px;
+		top: 5px;  
+    	width: 110px;
 	}
 }
 @media only screen and (max-width: 479px) {
-
+	header .logo {
+		margin:0 auto;
+	}
+	header .number {
+		margin:0 auto;
+		padding: 8px 0px;
+	}
+	.about-video:after {
+		top: 92%;
+    	left: 80%;
+	}
+	.video .background-video {
+		 width: 250px;
+	}
+	.about-block:after {
+		left: 30%;
+	}
+	.party .oleja {
+		top:29px;
+	}
+}
+@media only screen and (max-width: 320px) {
+	.video .background-video {
+		width: 140px;
+	}
 }
